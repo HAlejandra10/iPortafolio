@@ -16,7 +16,7 @@ const links =[
   },
   {
     id: "skills",
-    text: "My Padawan Journey",
+    text: "Padawan Skills",
     icon: <EmojiObjectsTwoToneIcon />
   },
   {
@@ -26,7 +26,7 @@ const links =[
   },
   {
     id: "contact",
-    text: "Get in touch",
+    text: "Get In Touch",
     icon: <ContactMailTwoToneIcon />
   },
 
@@ -76,6 +76,18 @@ const useStyles= makeStyles((theme) => ({
     display:"flex",
     justifyContent: "flex-start",
     alignItems: "center",
+   },
+   menu:{
+    [theme.breakpoints.down("xs")]: {
+      display:"none"
+    },
+    "& a" : {
+      color: "#333",
+      fontSize: "1.4rem",
+      fontWeight: "bold",
+      marginLeft: theme.spacing(3)
+
+    }
    }
   
 }))
