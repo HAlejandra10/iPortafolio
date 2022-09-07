@@ -11,7 +11,7 @@ import {ContactMailTwoToneIcon} from "@material-ui/icons/ContactMailTwoTone";
 const links =[
   {
     id: "about",
-    text: "About me",
+    text: "About Me",
     icon: <InfoTwoToneIcon />
   },
   {
@@ -20,7 +20,7 @@ const links =[
     icon: <EmojiObjectsTwoToneIcon />
   },
   {
-    id: "work",
+    id: "mywork",
     text: "My Work",
     icon: <BuildTwoToneIcon />
   },
@@ -41,7 +41,16 @@ const NavBar = () => {
            <List className={classes.menu}>
             {
               links.map(({id, text}, index) =>(
-                <Link key={index} to={id} spy={true} smooth={true} duration={500} offset={-70}>{text}</Link>
+                <Link 
+                  key={index} 
+                  to={id} 
+                  spy={true} 
+                  aciveClass="active" 
+                  smooth={true} 
+                  duration={500} 
+                  offset={-70}>
+                   {text}
+                </Link>
               ))
             }
            </List>
@@ -78,7 +87,7 @@ const useStyles= makeStyles((theme) => ({
     alignItems: "center",
    },
    menu:{
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       display:"none"
     },
     "& a" : {
@@ -86,8 +95,12 @@ const useStyles= makeStyles((theme) => ({
       fontSize: "1.4rem",
       fontWeight: "bold",
       marginLeft: theme.spacing(3)
-
-    }
+    },
+    "& a:hover": {
+      cursor: "pointer", 
+      color: "#5E17EB",
+      borderBottom: "3px solid #5E17EB"
+     },
    }
   
 }))
