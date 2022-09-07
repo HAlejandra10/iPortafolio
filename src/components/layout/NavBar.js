@@ -1,5 +1,5 @@
-import { AppBar, Toolbar, List, Menu, IconButton } from '@material-ui/core'
-import React from 'react'
+import { AppBar, Toolbar, List,  IconButton, Drawer, Divider,  } from '@material-ui/core'
+import React, { useState } from 'react'
 import logo from "../../img/logoH.png"
 import { makeStyles } from '@material-ui/core'
 import {Link, animateScroll as scroll} from "react-scroll"
@@ -8,6 +8,7 @@ import {EmojiObjectsTwoToneIcon} from "@material-ui/icons/EmojiObjectsTwoTone";
 import {BuildTwoToneIcon} from "@material-ui/icons/BuildTwoTone";
 import {ContactMailTwoToneIcon} from "@material-ui/icons/ContactMailTwoTone";
 import MenuIcon from "@material-ui/icons/Menu"
+import CancelIcon from "@material-ui/icons/Cancel"
 
 const links =[
   {
@@ -35,7 +36,9 @@ const links =[
 
 const NavBar = () => {
   const classes= useStyles()
+  const [open, setOpen] = useState(true)
   return (
+    <>
     <AppBar position="sticky" className={classes.root}>
            <Toolbar className={classes.toolbar}>
            <img src={logo} alt="Programmer" className={classes.logo} /> 
@@ -55,12 +58,22 @@ const NavBar = () => {
               ))
             }
            </List>
-           <IconButton edge="end" className={classes.menubutton}>
+           <IconButton 
+           edge="end" 
+           className={classes.menubutton}
+           onClick={()=>setOpen(!open)}>
              <MenuIcon fontSize="large"/>
             </IconButton>
             </Toolbar>         
      </AppBar>
 
+     <Drawer anchor="right" open={open} onClose={()=>setOpen(false)}>
+        <IconButton  onClick={()=>setOpen(false)}>
+            <CancelIcon/>
+        </IconButton>
+        <Divider/>
+     </Drawer>
+     </>
    
   );
 }
