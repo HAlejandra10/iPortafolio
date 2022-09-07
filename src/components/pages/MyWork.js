@@ -18,6 +18,10 @@ const useStyles= makeStyles((theme) => ({
   sectiondark:{
     background: "#333",
     color: "#fff"
+  },
+  sectioncontent: {
+    maxWidth: "80vw", 
+    margin: "0 auto"
   }
 }))
 export default MyWork

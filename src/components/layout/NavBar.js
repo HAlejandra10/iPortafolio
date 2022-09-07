@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, List } from '@material-ui/core'
+import { AppBar, Toolbar, List, Menu, IconButton } from '@material-ui/core'
 import React from 'react'
 import logo from "../../img/logoH.png"
 import { makeStyles } from '@material-ui/core'
@@ -7,6 +7,7 @@ import {InfoTwoToneIcon} from "@material-ui/icons/InfoTwoTone"
 import {EmojiObjectsTwoToneIcon} from "@material-ui/icons/EmojiObjectsTwoTone";
 import {BuildTwoToneIcon} from "@material-ui/icons/BuildTwoTone";
 import {ContactMailTwoToneIcon} from "@material-ui/icons/ContactMailTwoTone";
+import MenuIcon from "@material-ui/icons/Menu"
 
 const links =[
   {
@@ -54,6 +55,9 @@ const NavBar = () => {
               ))
             }
            </List>
+           <IconButton edge="end" className={classes.menubutton}>
+             <MenuIcon fontSize="large"/>
+            </IconButton>
             </Toolbar>         
      </AppBar>
 
@@ -101,6 +105,18 @@ const useStyles= makeStyles((theme) => ({
       color: "#5E17EB",
       borderBottom: "3px solid #5E17EB"
      },
+   },
+   menubutton: {
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      color: "#5E17EB",
+      position: "absolute",
+      top: 0,
+      right: 10,
+
+
+    }
    }
   
 }))
