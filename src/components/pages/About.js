@@ -74,6 +74,10 @@ const useStyles= makeStyles((theme) => ({
     position: "absolute",
     bottom: "5rem",
     right: "4rem",
+    [theme.breakpoints.down("sm")]:{
+      bottom:30,
+      right: 16,
+    },
     backgroundColor: "#4181ED",
     padding: theme.spacing(3),
     //para el color del hover del boton
