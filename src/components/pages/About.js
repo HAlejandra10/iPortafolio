@@ -1,6 +1,7 @@
-import { Card, CardContent, CardMedia, makeStyles, Typography } from '@material-ui/core'
+import { Button, Card, CardActions, CardContent, CardMedia, makeStyles, Typography } from '@material-ui/core'
 import React from 'react'
 import ifoto from "../../img/ifoto.png"
+import pdf from "../../img/Heidy_Primo_CV.pdf"
 import TypeWriterEffect from "react-typewriter-effect"
 
 const About = ({title, id, dark}) => {
@@ -27,9 +28,15 @@ const About = ({title, id, dark}) => {
              startDelay={2500}
              cursorColor="black"
              typeSpeed={100}
-
              />
           </CardContent>
+          <CardActions>
+            <Button variant="contained" className={classes.pdfbutton}>
+              <a href={pdf} download>
+              Download CV
+              </a>
+            </Button>
+          </CardActions>
         </Card>
       </div>
     </div>
@@ -62,6 +69,26 @@ const useStyles= makeStyles((theme) => ({
     objectFit: "cover",
     borderRadius: "10px",
     margin: theme.spacing(5)
+  },
+  pdfbutton:{
+    position: "absolute",
+    bottom: "5rem",
+    right: "4rem",
+    backgroundColor: "#4181ED",
+    padding: theme.spacing(3),
+    //para el color del hover del boton
+    "&:hover":{
+      backgroundColor:"#333333"
+    },
+    //para el texto del boton del link
+    "& a":{
+      color: "#49e9ff",
+      textDecoration: "none",
+      fontWeight: 900,
+    },
+    "& a:hover": {
+      color: "#4181ED"
+    }
   },
 
 }))
