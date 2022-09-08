@@ -12,7 +12,7 @@ function App() {
   return (
     <div className={classes.root}>
        <NavBar />
-       <a href='/'> <img className={classes.logo} src={logo} alt="Programmer" /> </a>
+       <span> <img className={classes.logo} src={logo} alt="Programmer" /> </span>
        <About title="About Me" id="about" dark={true}/>
       <Skills title="My Coding Journey"  id="skills" dark={false} />
       <MyWork title="My Work" id="mywork" dark={true} />
@@ -29,11 +29,12 @@ const useStyles= makeStyles((theme) => ({
   },
   logo: {
     maxWidth: "510px", /* Cambiar esta propiedad para adaptar al tamaño deseado*/
-    height: "410px",
+    height: "auto",
     padding: "1px",
     borderStyle: "none",
     display: "flex",
-    margin: "2.5rem"
+    margin: "2.5rem",
+    marginLeft:"10px"
   }
 }))
 export default App;
