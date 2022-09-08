@@ -17,7 +17,7 @@ import ContactMailTwoToneIcon from "@material-ui/icons/ContactMailTwoTone"
 
 const NavBar = () => {
   const classes= useStyles()
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   const links =[
     {
