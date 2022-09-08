@@ -1,42 +1,48 @@
-import { AppBar, Toolbar, List,  IconButton, Drawer, Divider,  } from '@material-ui/core'
+import { AppBar, Toolbar, List,  IconButton, Drawer, Divider} from '@material-ui/core'
+import ListItem from '@material-ui/core/ListItem' 
+import ListItemIcon from '@material-ui/core/ListItemIcon'
 import React, { useState } from 'react'
 import logo from "../../img/logoH.png"
 import { makeStyles } from '@material-ui/core'
 import {Link, animateScroll as scroll} from "react-scroll"
-import {InfoTwoToneIcon} from "@material-ui/icons/InfoTwoTone"
-import {EmojiObjectsTwoToneIcon} from "@material-ui/icons/EmojiObjectsTwoTone";
-import {BuildTwoToneIcon} from "@material-ui/icons/BuildTwoTone";
-import {ContactMailTwoToneIcon} from "@material-ui/icons/ContactMailTwoTone";
 import MenuIcon from "@material-ui/icons/Menu"
 import CancelIcon from "@material-ui/icons/Cancel"
+import InfoTwoToneIcon from "@material-ui/icons/InfoTwoTone"
+import EmojiObjectsTwoToneIcon from "@material-ui/icons/EmojiObjectsTwoTone"
+import BuildTwoToneIcon from "@material-ui/icons/BuildTwoTone"
+import ContactMailTwoToneIcon from "@material-ui/icons/ContactMailTwoTone"
 
-const links =[
-  {
-    id: "about",
-    text: "About Me",
-    icon: <InfoTwoToneIcon />
-  },
-  {
-    id: "skills",
-    text: "Padawan Skills",
-    icon: <EmojiObjectsTwoToneIcon />
-  },
-  {
-    id: "mywork",
-    text: "My Work",
-    icon: <BuildTwoToneIcon />
-  },
-  {
-    id: "contact",
-    text: "Get In Touch",
-    icon: <ContactMailTwoToneIcon />
-  },
 
-]
+
 
 const NavBar = () => {
   const classes= useStyles()
   const [open, setOpen] = useState(true)
+
+  const links =[
+    {
+      id: "about",
+      text: "About Me",
+      icon:   <InfoTwoToneIcon fontSize="large" className={classes.info} /> 
+     
+    },
+    {
+      id: "skills",
+      text: "Padawan Skills",
+      icon: <EmojiObjectsTwoToneIcon fontSize="large" className={classes.light}/>
+    },
+    {
+      id: "mywork",
+      text: "My Work", 
+      icon: <BuildTwoToneIcon fontSize="large" className={classes.irontool}/>
+    },
+    {
+      id: "contact",
+      text: "Get In Touch",
+      icon: <ContactMailTwoToneIcon fontSize="large" className={classes.contactmail}/>
+    },
+  
+  ]
   return (
     <>
     <AppBar position="sticky" className={classes.root}>
@@ -69,10 +75,33 @@ const NavBar = () => {
 
      <Drawer anchor="right" open={open} onClose={()=>setOpen(false)}>
         <IconButton  onClick={()=>setOpen(false)}>
-            <CancelIcon/>
+            <CancelIcon fontSize='large' className={classes.cancelicon}/>
         </IconButton>
         <Divider/>
+        {
+              links.map(({id, text, icon}, index) =>(
+                <Link 
+                  key={index} 
+                  className={classes.sidebar}
+                  to={id} 
+                  spy={true} 
+                  aciveClass="active" 
+                  smooth={true} 
+                  duration={500} 
+                  offset={-70}>
+                    <ListItem component="h5">
+                    <span >
+                      <ListItemIcon>
+                       {icon}
+                      </ListItemIcon> 
+                    </span>
+                    {text}
+                   </ListItem>
+                </Link>
+              ))
+            }
      </Drawer>
+   
      </>
    
   );
@@ -103,6 +132,18 @@ const useStyles= makeStyles((theme) => ({
     justifyContent: "flex-start",
     alignItems: "center",
    },
+   light: {
+    color: "#ffcc00"
+   },
+   info:{
+    color: "#4181ED"
+   },
+   irontool: {
+    color: "#00F788"
+   },
+   contactmail: {
+    color: "#F700B3"
+   },
    menu:{
     [theme.breakpoints.down("sm")]: {
       display:"none"
@@ -127,9 +168,29 @@ const useStyles= makeStyles((theme) => ({
       position: "absolute",
       top: 0,
       right: 10,
-
-
     }
+   },
+   cancelicon: {
+      color: "#5E17EB",
+      
+  },
+   sidebar: {
+    width: "40vw",
+    [theme.breakpoints.down("sm")]: {
+      width: "60vh"
+    },
+    "& h5":{
+      margin: theme.spacing(10,0,0,4),
+      fontSize: "1.4rem",
+      color: "#5E17EB",
+      fontWeight: "bold",
+    },
+    "& h5:hover": {
+      color: "#5E17EB",
+      cursor: "pointer"
+     }
+   
+
    }
   
 }))
