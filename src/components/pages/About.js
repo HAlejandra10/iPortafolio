@@ -31,7 +31,7 @@ const About = ({title, id, dark}) => {
              />
              <Typography variant="h6" color="textSecondary">
               Texto que describe cómo somos de buenos programadores, y lo mucho que vamos a aportar a la empresa que nos contrate
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem quidem et id iusto mollitia nam quam dolore nulla repellendus doloribus numquam, commodi quia laboriosam consectetur voluptatem ipsum, quisquam enim.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem quidem et id iusto mollitia nam quam dolore nulla repel
              </Typography>
           </CardContent>
           <CardActions>
