@@ -29,6 +29,10 @@ const About = ({title, id, dark}) => {
              cursorColor="black"
              typeSpeed={100}
              />
+             <Typography variant="h6" color="textSecondary">
+              Texto que describe cómo somos de buenos programadores, y lo mucho que vamos a aportar a la empresa que nos contrate
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem quidem et id iusto mollitia nam quam dolore nulla repellendus doloribus numquam, commodi quia laboriosam consectetur voluptatem ipsum, quisquam enim.
+             </Typography>
           </CardContent>
           <CardActions>
             <Button variant="contained" className={classes.pdfbutton}>
@@ -69,6 +73,15 @@ const useStyles= makeStyles((theme) => ({
     objectFit: "cover",
     borderRadius: "10px",
     margin: theme.spacing(5)
+  },
+  cardcontent:{
+    marginTop: theme.spacing(2),
+    "& h6":{
+      marginTop: theme.spacing(6),
+      [theme.breakpoints.down("sm")]:{
+        display: "none",
+      }
+    }
   },
   pdfbutton:{
     position: "absolute",
