@@ -81,6 +81,7 @@ const Technologies = () => {
             </TimelineItem>
         ))
         }
+        
     </Timeline>
   )
 }
