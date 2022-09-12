@@ -64,9 +64,37 @@ const useStyles= makeStyles((theme) => ({
     background: "#333",
     color: "#fff"
   },
+  root:{
+    marginTop: theme.spacing(4),
+    background: "#3B81ED" ,
+    color: "white", 
+    fontSize: "1.2rem",
+    maxWidth: "500px", 
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "between",
+    padding: theme.spacing(4),
+    "& button":{
+      backgroundColor: "white",
+      color: "#3B81ED",
+      fontWeight: "bold",
+      fontSize: "1.2rem",
+      marginTop: theme.spacing(4),
+    },
+    "& button:hover":{
+      backgroundColor: "#5E17EB",
+      color: "white"
+    }
+
+  },
   sectioncontent: {
    width: "80vw",
   //  border: "2px solid red",
+  },
+  titleandchoices:{
+    "& h5": {
+      marginTop: theme.spacing
+    }
   }
 }))
 
