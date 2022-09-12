@@ -30,8 +30,7 @@ const About = ({title, id, dark}) => {
              typeSpeed={100}
              />
              <Typography variant="h6" color="textSecondary">
-              Texto que describe cómo somos de buenos programadores, y lo mucho que vamos a aportar a la empresa que nos contrate
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque rem quidem et id iusto mollitia nam quam dolore nulla repel
+             My name is Heidy Alejandra Primo Diaz. I am a girl partly self taught. A industrial engineer passionate for technologies currently dedicated to grown on coding field like junior front end developer with 7 months of professional experience, actively look for new opportunities to learn and apply my knowledge. My journey as a Front-end developer started in the middle of Coronavirus pandemic. I started to learn the basic things to developer my first website using Html, Css and JavaScript and since then I've been building code. Plus, I am handling ReactJs library, and Node.js, and about API's.
              </Typography>
           </CardContent>
           <CardActions>
@@ -85,7 +84,7 @@ const useStyles= makeStyles((theme) => ({
   },
   pdfbutton:{
     position: "absolute",
-    bottom: "5rem",
+    bottom: "2rem",
     right: "4rem",
     [theme.breakpoints.down("sm")]:{
       bottom:30,
