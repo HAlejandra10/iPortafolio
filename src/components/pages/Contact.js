@@ -19,14 +19,14 @@ const Contact = ({title, id, dark}) => {
             <span>Say Hello</span>
             <Radio 
             value= "Say Hi"
-            checked={ value == "Say Hi"}
+            checked={ value === "Say Hi"}
             color="primary"
             onChange={handleChange}
             />
               <span>Get A Quote</span>
             <Radio 
             value= "Get A Quote"
-            checked={ value == "Get A Quote"}
+            checked={ value === "Get A Quote"}
             color="primary"
             onChange={handleChange}
             />
@@ -79,7 +79,7 @@ const useStyles= makeStyles((theme) => ({
       color: "#3B81ED",
       fontWeight: "bold",
       fontSize: "1.2rem",
-      marginTop: theme.spacing(4),
+      marginTop: theme.spacing(2),
     },
     "& button:hover":{
       backgroundColor: "#5E17EB",
@@ -95,6 +95,11 @@ const useStyles= makeStyles((theme) => ({
     "& h5": {
       marginTop: theme.spacing
     }
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    marginBottom: theme.spacing(1)
   }
 }))
 

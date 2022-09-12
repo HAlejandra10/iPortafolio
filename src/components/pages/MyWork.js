@@ -39,7 +39,7 @@ const useStyles= makeStyles((theme) => ({
     color: "#fff"
   },
   sectioncontent:{
-    // maxWidth: "90vh", //90%
+    maxWidth: "90vh", //90%
     margin: "0 auto", //center
     padding: theme.spacing(5)
   },

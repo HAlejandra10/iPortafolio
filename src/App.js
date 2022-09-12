@@ -7,9 +7,11 @@ import MyWork from './components/pages/MyWork';
 import Contact from './components/pages/Contact';
 import logo from "../src/img/logo.gif"
 
+
 function App() {
   const classes= useStyles()
   return (
+   
     <div className={classes.root}>
        <NavBar />
        <span> <img className={classes.logo} src={logo} alt="Programmer" /> </span>
@@ -17,7 +19,6 @@ function App() {
       <Skills title="My Coding Journey"  id="skills" dark={false} />
       <MyWork title="My Work" id="mywork" dark={true} />
       <Contact title="Get in touch" id="contact" dark={false}/>
-     
     </div>
   );
 }
