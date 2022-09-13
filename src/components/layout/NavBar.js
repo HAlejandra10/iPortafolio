@@ -64,7 +64,7 @@ const NavBar = () => {
                   key={index} 
                   to={id} 
                   spy={true} 
-                  aciveClass="active" 
+                  activeClass="active" 
                   smooth={true} 
                   duration={500} 
                   offset={-70}>
@@ -94,7 +94,7 @@ const NavBar = () => {
                   className={classes.sidebar}
                   to={id} 
                   spy={true} 
-                  aciveClass="active" 
+                  activeClass="active" 
                   smooth={true} 
                   duration={500} 
                   offset={-70}>

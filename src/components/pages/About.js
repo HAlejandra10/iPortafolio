@@ -30,7 +30,7 @@ const About = ({title, id, dark}) => {
              typeSpeed={100}
              />
              <Typography variant="h6" color="textSecondary">
-             My name is Heidy Alejandra Primo Diaz. I am a girl partly self taught. A industrial engineer passionate for technologies currently dedicated to grown on coding field like junior front end developer with 7 months of professional experience, actively look for new opportunities to learn and apply my knowledge. My journey as a Front-end developer started in the middle of Coronavirus pandemic. I started to learn the basic things to developer my first website using Html, Css and JavaScript and since then I've been building code. Plus, I am handling ReactJs library, and Node.js, and about API's.
+             My name is Heidy Alejandra Primo Diaz. I am a girl partly self taught. A industrial engineer passionate for technologies currently dedicated to grown on coding field like junior front end developer with 7 months of professional experience, actively look for new opportunities to learn and apply my knowledge. My journey as a Front-End developer started in the middle of Coronavirus pandemic. I started to learn the basic things to developer my first website using Html, Css and JavaScript and since then I've been building code. Plus, I am handling ReactJs library, and Node.js, and about API's.
              </Typography>
           </CardContent>
           <CardActions>
@@ -67,7 +67,7 @@ const useStyles= makeStyles((theme) => ({
 
   },
   media: {
-    width: "250px",
+    width: "1000px",
     height: "auto",
     objectFit: "cover",
     borderRadius: "10px",
@@ -76,7 +76,7 @@ const useStyles= makeStyles((theme) => ({
   cardcontent:{
     marginTop: theme.spacing(2),
     "& h6":{
-      marginTop: theme.spacing(6),
+      marginTop: theme.spacing(5),
       [theme.breakpoints.down("sm")]:{
         display: "none",
       }
@@ -86,6 +86,7 @@ const useStyles= makeStyles((theme) => ({
     position: "absolute",
     bottom: "2rem",
     right: "4rem",
+    height: "25px",
     [theme.breakpoints.down("sm")]:{
       bottom:30,
       right: 16,

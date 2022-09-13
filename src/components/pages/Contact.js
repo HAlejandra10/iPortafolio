@@ -32,7 +32,7 @@ const Contact = ({title, id, dark}) => {
             />
           </div>
           </div>
-          <form className={classes.form} validate autoComplete="off">
+          <form className={classes.form} noValidate autoComplete="off">
             <TextField label="Your Name"/>
             <TextField label="Your e-mail"/>
             {
@@ -46,7 +46,7 @@ const Contact = ({title, id, dark}) => {
             <TextField label="Write a message"/>
           </form>
           <Button variant="contained">Submit</Button>
-        </Paper>
+        </Paper>      
       </div>
     </div>
   )
