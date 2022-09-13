@@ -1,7 +1,7 @@
 {
   "main.css": "/iPortafolio/static/css/main.41916cb3.chunk.css",
-  "main.js": "/iPortafolio/static/js/main.b864c0e7.chunk.js",
-  "main.js.map": "/iPortafolio/static/js/main.b864c0e7.chunk.js.map",
+  "main.js": "/iPortafolio/static/js/main.af3081c4.chunk.js",
+  "main.js.map": "/iPortafolio/static/js/main.af3081c4.chunk.js.map",
   "static/js/1.7ca6c055.chunk.js": "/iPortafolio/static/js/1.7ca6c055.chunk.js",
   "static/js/1.7ca6c055.chunk.js.map": "/iPortafolio/static/js/1.7ca6c055.chunk.js.map",
   "runtime~main.js": "/iPortafolio/static/js/runtime~main.adb65671.js",
@@ -16,6 +16,6 @@
   "static/media/logo.gif": "/iPortafolio/static/media/logo.1f133fd5.gif",
   "static/css/main.41916cb3.chunk.css.map": "/iPortafolio/static/css/main.41916cb3.chunk.css.map",
   "index.html": "/iPortafolio/index.html",
-  "precache-manifest.c40e981b88425e3e08179fe299f5cdcb.js": "/iPortafolio/precache-manifest.c40e981b88425e3e08179fe299f5cdcb.js",
+  "precache-manifest.19ac85263f6a49356953e5656c3d33c8.js": "/iPortafolio/precache-manifest.19ac85263f6a49356953e5656c3d33c8.js",
   "service-worker.js": "/iPortafolio/service-worker.js"
 }
