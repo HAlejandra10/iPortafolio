@@ -5,7 +5,7 @@ const mockData = [
     {
         title: "Portafolio",
         image: porta,
-        link: "https://github.com/HAlejandra10/MOKEPON",
+        link: "https://halejandra10.github.io/iPortafolio/",
     },
     {   
         title: "Next project",
