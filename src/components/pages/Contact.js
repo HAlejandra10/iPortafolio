@@ -32,20 +32,20 @@ const Contact = ({title, id, dark}) => {
             />
           </div>
           </div>
-          <form  method="POST" data-netlify="true" action="#"className={classes.form} validate autoComplete="off">
-            <TextField id="name" label="Your Name"/>
-            <TextField id="email" label="Your e-mail"/>
+          <form  className={classes.form} noValidate autoComplete="off">
+            <TextField label="Your Name"/>
+            <TextField label="Your e-mail"/>
             {
                value === "Get A Quote" ? (
                 <>
-                 <TextField id="message" label="Needed Services"/>
-                 <TextField id="message" label="Stimaded budget"/>
+                 <TextField label="Needed Services"/>
+                 <TextField label="Stimaded budget"/>
                 </>
                ) : null
             }
-            <TextField id="message" label="Write a message"/>
+            <TextField label="Write a message"/>
           </form>
-          <Button type="submit"variant="contained">Submit</Button>
+          <Button  variant="contained">Submit</Button>
         </Paper>      
       </div>
     </div>
