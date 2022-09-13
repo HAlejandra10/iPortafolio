@@ -32,7 +32,7 @@ const Contact = ({title, id, dark}) => {
             />
           </div>
           </div>
-          <form className={classes.form} noValidate autoComplete="off">
+          <form  method="POST" data-netlify="true" action="#"className={classes.form} noValidate autoComplete="off">
             <TextField label="Your Name"/>
             <TextField label="Your e-mail"/>
             {
