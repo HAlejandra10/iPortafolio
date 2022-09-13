@@ -5,7 +5,7 @@ const mockData = [
     {
         title: "Portafolio",
         image: porta,
-        link: "https://portaf.netlify.app/",
+        link: "https://boisterous-dango-fac437.netlify.app/",
     },
     {   
         title: "Next project",
