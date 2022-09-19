@@ -30,6 +30,7 @@ const MyWork = ({title, id, dark}) => {
     </div>
   )
 }
+
 const useStyles= makeStyles((theme) => ({
   section: {
     minHeight: "100vh",

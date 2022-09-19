@@ -14,6 +14,7 @@ import pic3 from "../../img/JavaScript_Logo.png"
 import pic4 from "../../img/React_Logo.png"
 import pic5 from "../../img/Git_Logo.png"
 import StarRating from './StarRating';
+import pic6 from "../../img/bootstrap.png";
 
 
 
@@ -45,6 +46,12 @@ const Technologies = () => {
             year:"2021",
             image: pic4,
             title: "ReactJs",
+            stars: 4,
+        },
+        {
+            year:"2022",
+            image: pic6,
+            title: "Bootstrap",
             stars: 4,
         },
         {
