@@ -1,9 +1,9 @@
 {
-  "main.css": "/iPortafolio/static/css/main.41916cb3.chunk.css",
-  "main.js": "/iPortafolio/static/js/main.af3081c4.chunk.js",
-  "main.js.map": "/iPortafolio/static/js/main.af3081c4.chunk.js.map",
-  "static/js/1.7ca6c055.chunk.js": "/iPortafolio/static/js/1.7ca6c055.chunk.js",
-  "static/js/1.7ca6c055.chunk.js.map": "/iPortafolio/static/js/1.7ca6c055.chunk.js.map",
+  "main.css": "/iPortafolio/static/css/main.161addf0.chunk.css",
+  "main.js": "/iPortafolio/static/js/main.7a40c9c5.chunk.js",
+  "main.js.map": "/iPortafolio/static/js/main.7a40c9c5.chunk.js.map",
+  "static/js/1.a42ebd42.chunk.js": "/iPortafolio/static/js/1.a42ebd42.chunk.js",
+  "static/js/1.a42ebd42.chunk.js.map": "/iPortafolio/static/js/1.a42ebd42.chunk.js.map",
   "runtime~main.js": "/iPortafolio/static/js/runtime~main.adb65671.js",
   "runtime~main.js.map": "/iPortafolio/static/js/runtime~main.adb65671.js.map",
   "static/media/ifoto.png": "/iPortafolio/static/media/ifoto.333a01d0.png",
@@ -12,10 +12,11 @@
   "static/media/css.png": "/iPortafolio/static/media/css.e493a5e6.png",
   "static/media/JavaScript_Logo.png": "/iPortafolio/static/media/JavaScript_Logo.0cded3a3.png",
   "static/media/React_Logo.png": "/iPortafolio/static/media/React_Logo.360a0ef4.png",
+  "static/media/bootstrap.png": "/iPortafolio/static/media/bootstrap.8dc253bd.png",
   "static/media/porta.png": "/iPortafolio/static/media/porta.1c8f8077.png",
   "static/media/logo.gif": "/iPortafolio/static/media/logo.1f133fd5.gif",
-  "static/css/main.41916cb3.chunk.css.map": "/iPortafolio/static/css/main.41916cb3.chunk.css.map",
+  "static/css/main.161addf0.chunk.css.map": "/iPortafolio/static/css/main.161addf0.chunk.css.map",
   "index.html": "/iPortafolio/index.html",
-  "precache-manifest.19ac85263f6a49356953e5656c3d33c8.js": "/iPortafolio/precache-manifest.19ac85263f6a49356953e5656c3d33c8.js",
+  "precache-manifest.aeee931a9abf17742ff97e3e7302fdd6.js": "/iPortafolio/precache-manifest.aeee931a9abf17742ff97e3e7302fdd6.js",
   "service-worker.js": "/iPortafolio/service-worker.js"
 }

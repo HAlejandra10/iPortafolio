@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "af3081c405a543af51be",
-    "url": "/iPortafolio/static/css/main.41916cb3.chunk.css"
+    "revision": "7a40c9c5543eea163804",
+    "url": "/iPortafolio/static/css/main.161addf0.chunk.css"
   },
   {
-    "revision": "af3081c405a543af51be",
-    "url": "/iPortafolio/static/js/main.af3081c4.chunk.js"
+    "revision": "7a40c9c5543eea163804",
+    "url": "/iPortafolio/static/js/main.7a40c9c5.chunk.js"
   },
   {
-    "revision": "7ca6c05596d8372f48fd",
-    "url": "/iPortafolio/static/js/1.7ca6c055.chunk.js"
+    "revision": "a42ebd42b0d88735d27f",
+    "url": "/iPortafolio/static/js/1.a42ebd42.chunk.js"
   },
   {
     "revision": "adb65671f33921fc30c3",
@@ -40,6 +40,10 @@ self.__precacheManifest = [
     "url": "/iPortafolio/static/media/React_Logo.360a0ef4.png"
   },
   {
+    "revision": "8dc253bd804a6f11918e108f47152df4",
+    "url": "/iPortafolio/static/media/bootstrap.8dc253bd.png"
+  },
+  {
     "revision": "1c8f8077bee2d80b5ce3191d7fed1a81",
     "url": "/iPortafolio/static/media/porta.1c8f8077.png"
   },
@@ -48,7 +52,7 @@ self.__precacheManifest = [
     "url": "/iPortafolio/static/media/logo.1f133fd5.gif"
   },
   {
-    "revision": "3f64a4a85635998f30143bdae95b00d1",
+    "revision": "fb0a9081d003ab543e02b8d810fb352e",
     "url": "/iPortafolio/index.html"
   }
 ];
